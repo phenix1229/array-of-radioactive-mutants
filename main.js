@@ -19,27 +19,27 @@ function changeAllValuesTo(arr, val) {
   }
 }
 
-// function oddOrEven(arr) {
-//   let i = 0;
+function oddOrEven(arr) {
+  let i = 0;
 
-//   while(i < arr.length){
-//     if (arr[i] % 2 === 0){
-//       arr[1] = 'even';
-//     } else {
-//       arr[i] = 'odd';
-//     }
-//     i = i + 1;
-//   }
-// }
+  while(i < arr.length){
+    if (arr[i] % 2 === 0){
+      arr[i] = 'even';
+    } else {
+      arr[i] = 'odd';
+    }
+    i = i + 1;
+  }
+}
 
-// function changeNextThreeToValue(arr, ind, val) {
-//   let i = ind;
-
-//   while(i < i + 3){
-//     arr[i] = val;
-//     i = i + 1;
-//   }
-// }
+function changeNextThreeToValue(ind, arr, val) {
+  let i = ind;
+  let max = i + 3;
+  while(i < max){
+  arr[i] = val;
+  i = i + 1;
+  }
+}
 
 module.exports = {
   changeLast,
